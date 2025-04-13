@@ -1,4 +1,4 @@
-% Example of PID temperature Control System of  writted in Octave Language 
+% Example of PID temperature Control System of writted in Octave Language 
 % Exemplo de um sistema de controle PDI de temperatura escrito em linguagem Octave
 % Comments in portuguese
 
