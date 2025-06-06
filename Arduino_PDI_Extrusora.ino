@@ -11,9 +11,7 @@ int thisChar = 0 ;
 #define GPIO_CS       9
 #define GPIO_CLK      10
 
-
 MAX6675 termopar(GPIO_CLK, GPIO_CS, GPIO_SO); // Criação de objeto para comunicação com termopar
-
 
 int PWM_pin = 3; //Pino 3 digital
 
@@ -24,8 +22,6 @@ float erro_pid = 0;
 float erro_anterior = 0;
 float tempo_decorido, tempo, tempo_prev;
 int PID_valor = 0;
-
-
 
 //PID constantes
 int kp = 9.1;   int ki = 0.3;   int kd = 1.8;
@@ -56,7 +52,6 @@ void loop() {
   
   PID_valor = PID_p + PID_i + PID_d; //Valor final será a soma de P + I + D
 
-  
   if(PID_valor < 0) //  PWM no range entre 0 e 255
   {    PID_valor = 0;    }
   if(PID_valor > 255)  
