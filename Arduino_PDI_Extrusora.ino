@@ -66,7 +66,7 @@ void loop() {
   lcd.setCursor(0,1);
   lcd.print("S:");
   lcd.setCursor(2,1);
-  lcd.print(temperatura_lida,1);
+  lcd.print(setpoint_temperatura,1);
   lcd.setCursor(9,1);
   lcd.print("R:");
   lcd.setCursor(11,1);
