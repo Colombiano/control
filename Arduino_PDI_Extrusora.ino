@@ -17,14 +17,14 @@ int PWM_pin = 3; //Pino 3 digital
 
 //Variaveis
 float temperatura_lida = 0.0;
-float setpoint_temperatura = 51;
+float setpoint_temperatura = 40;
 float erro_pid = 0;
 float erro_anterior = 0;
 float tempo_decorido, tempo, tempo_prev;
 int PID_valor = 0;
 
 //PID constantes
-int kp = 9.1;   int ki = 0.3;   int kd = 1.8;
+int kp = 10.47;   int ki = 0.31;   int kd = 1.62;
 int PID_p = 0;    int PID_i = 0;    int PID_d = 0;
 
 void setup() {
